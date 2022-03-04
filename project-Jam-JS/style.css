@@ -73,7 +73,7 @@ body {
 }
 
 .clock .hand {
-    --rotation: 30;
+    --rotation: 0;
     position: absolute;
     bottom: 50%;
     left: 50%;
@@ -87,4 +87,25 @@ body {
     transform-origin: bottom;
     z-index: 10;
     transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+}
+
+/* /* mengambil css dasar dari .clock dan di modifikasi untuk .hand.second */
+.clock .hand.second {
+    width: 3px;
+    height: 45%;
+    background-color: red;
+}
+
+/* mengambil css dasar dari .clock dan di modifikasi untuk .hand.minute*/
+.clock .hand.minute {
+    width: 7px;
+    height: 40%;
+    background-color: black;
+}
+
+/* mengambil css dasar dari .clock dan di modifikasi untuk .hand.hour */
+.clock .hand.hour {
+    width: 10px;
+    height: 35%;
+    background-color: black;
 }
